@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cafetería Aroma - Menú</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Cafetería Aroma</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html" aria-current="page">Menú</a></li>
+        <li><a href="pedido.html">Pedido</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Personaliza tu bebida o comida</h2>
+      <form action="pedido.html" method="get" aria-label="Formulario para personalizar pedido">
+        <fieldset>
+          <legend>Elige tu producto</legend>
+          <label>
+            <input type="radio" name="producto" value="cafe" required />
+            Café
+          </label>
+          <label>
+            <input type="radio" name="producto" value="te" />
+            Té
+          </label>
+          <label>
+            <input type="radio" name="producto" value="sandwich" />
+            Sándwich
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Selecciona ingredientes adicionales</legend>
+          <label>
+            <input type="checkbox" name="ingredientes" value="leche" />
+            Leche
+          </label>
+          <label>
+            <input type="checkbox" name="ingredientes" value="azucar" />
+            Azúcar
+          </label>
+          <label>
+            <input type="checkbox" name="ingredientes" value="canela" />
+            Canela
+          </label>
+          <label>
+            <input type="checkbox" name="ingredientes" value="miel" />
+            Miel
+          </label>
+          <label>
+            <input type="checkbox" name="ingredientes" value="queso" />
+            Queso (para sándwich)
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Forma o tamaño</legend>
+          <label for="tamano">Tamaño:</label>
+          <select name="tamano" id="tamano" required>
+            <option value="">Seleccione</option>
+            <option value="pequeno">Pequeño</option>
+            <option value="mediano">Mediano</option>
+            <option value="grande">Grande</option>
+          </select>
+        </fieldset>
+
+        <button type="submit">Agregar al pedido</button>
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Cafetería Aroma. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
